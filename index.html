@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Твоя весна успеха - Конференция для предпринимателей</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h1>ТВОЯ ВЕСНА УСПЕХА</h1>
+        </div>
+
+        <a
+          href="https://forms.yandex.ru/u/698078c684227c6d0ca0b3c8"
+          target="_blank"
+          class="register-btn header-register-btn"
+          >ЗАРЕГИСТРИРОВАТЬСЯ</a
+        >
+      </div>
+    </header>
+
+    <nav>
+      <div class="container nav-bar">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Открыть меню">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- DESKTOP LINKS -->
+        <div class="nav-content nav-content--desktop">
+          <a href="#about" class="nav-link">О ФОРУМЕ</a>
+          <a href="#schedule" class="nav-link">ПРОГРАММА</a>
+          <a href="#speakers" class="nav-link">СПИКЕРЫ</a>
+          <a href="#audience" class="nav-link">ДЛЯ КОГО</a>
+          <a href="#partners" class="nav-link">ПАРТНЕРЫ</a>
+          <a href="#location" class="nav-link">МЕСТО</a>
+        </div>
+      </div>
+
+      <!-- MOBILE OVERLAY -->
+      <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+      <div class="nav-drawer" id="navDrawer" aria-label="Мобильное меню">
+        <div class="nav-drawer-header">
+          <span class="nav-drawer-title">МЕНЮ</span>
+
+          <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <a href="#about" class="nav-link nav-link--mobile">О ФОРУМЕ</a>
+        <a href="#schedule" class="nav-link nav-link--mobile">ПРОГРАММА</a>
+        <a href="#speakers" class="nav-link nav-link--mobile">СПИКЕРЫ</a>
+        <a href="#audience" class="nav-link nav-link--mobile">ДЛЯ КОГО</a>
+        <a href="#partners" class="nav-link nav-link--mobile">ПАРТНЕРЫ</a>
+        <a href="#location" class="nav-link nav-link--mobile">МЕСТО</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-date">5 МАРТА 2026 | НОВОКУБАНСК, УЛ. ПЕРВОМАЙСКАЯ, 132</div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>ЧТО ВАС ЖДЕТ</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="feature-content">
+              <h3>Стратегии роста</h3>
+              <p>Масштабирование, инвестиции, новые рынки</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-users"></i></div>
+            <div class="feature-content">
+              <h3>Нетворкинг</h3>
+              <p>Партнеры, клиенты, инвесторы</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="feature-content">
+              <h3>Инновации</h3>
+              <p>Новые инструменты и технологии</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+            <div class="feature-content">
+              <h3>Мастер-классы</h3>
+              <p>Разбор реальных кейсов</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-mini-block">
+          <div class="video-mini-wrapper">
+            <iframe src="public/видео.mp4" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-mini-content">
+            <h4>КАК ЭТО БЫЛО</h4>
+            <p>Атмосфера прошлого форума. Успей стать частью события!</p>
+            <a
+              href="https://forms.yandex.ru/u/698078c684227c6d0ca0b3c8"
+              target="_blank"
+              class="register-btn"
+              style="padding: 12px 30px"
+              >УЧАСТВОВАТЬ</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <div class="section-title">
+          <h2>ПРОГРАММА КОНФЕРЕНЦИИ</h2>
+        </div>
+
+        <table class="program-table">
+          <thead>
+            <tr>
+              <th>Время</th>
+              <th>Мероприятие</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="program-time">09:30 - 11:00</td>
+              <td class="program-event">
+                <strong
+                  >Регистрация и выставка <span class="program-place">Холл, 1 этаж</span></strong
+                >
+                <div class="program-desc">
+                  • Консультации банковского сектора<br />
+                  • Площадки поддержки бизнеса Краснодарского края<br />
+                  • Выставка креативных индустрий
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="program-time">11:00 - 11:30</td>
+              <td class="program-event">
+                <strong
+                  >Торжественное открытие
+                  <span class="program-place">Большой зал, 1 этаж</span></strong
+                >
+                <div class="program-desc">Приветственное слово первых лиц</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="program-time">11:30 - 13:00</td>
+              <td class="program-event">
+                <strong>Ключевые вопросы развития бизнеса 2026</strong>
+                <div class="program-desc">
+                  Модератор: Евгения Гертель<br /><br />
+                  <strong>• Государственная поддержка бизнеса</strong> — Фонд развития бизнеса,
+                  Агентство по привлечению инвестиций, Фонд микрофинансирования<br />
+                  <strong>• Налоговое законодательство</strong> — ФНС, эксперты
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="register-block" id="register">
+          <a
+            href="https://forms.yandex.ru/u/698078c684227c6d0ca0b3c8"
+            target="_blank"
+            class="register-btn register-big-btn"
+            >ЗАРЕГИСТРИРОВАТЬСЯ НА ФОРУМ</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--<section class="speakers" id="speakers">
+      <div class="container">
+        <div class="section-title">
+          <h2>СПИКЕРЫ</h2>
+        </div>
+        <div class="speakers-grid">
+          <div class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.ibb.co/XrQ3kpwp/Ci-Bi-Mp-O1zi-DFKA.jpg" alt="Евгения Гертель" />
+            </div>
+            <div class="speaker-info">
+              <h3>Евгения Гертель</h3>
+              <p>Экспертные решения, Южная ассоциация франчайзинга</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-placeholder">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="speaker-info">
+              <h3>Спикер Целищева</h3>
+              <p>Уточняется</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.ibb.co/GfPdmRmx/0-Hu-Yhqkoa1-QDBw.jpg" alt="Елена Пистунова" />
+            </div>
+            <div class="speaker-info">
+              <h3>Елена Пистунова</h3>
+              <p>Фонд развития бизнеса КК</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.ibb.co/6RPj8ZDh/XGUXYde-Y6-Y2-DTQ.jpg" alt="Оксана Слюсарева" />
+            </div>
+            <div class="speaker-info">
+              <h3>Оксана Слюсарева</h3>
+              <p>Фонд Микрофинансирования КК</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-placeholder">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="speaker-info">
+              <h3>Спикер Приходько</h3>
+              <p>Уточняется</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-placeholder">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="speaker-info">
+              <h3>Представитель ФНС</h3>
+              <p>Федеральная налоговая служба</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-placeholder">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="speaker-info">
+              <h3>Эксперт по налогам</h3>
+              <p>Спикер уточняется</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.ibb.co/5h6qCJZC/5v-O0l-Qnr-Er-Loxg.jpg" alt="Инна Зубрицкая" />
+            </div>
+            <div class="speaker-info">
+              <h3>Инна Зубрицкая</h3>
+              <p>Парфюмерный Стиль</p>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.ibb.co/n8QKYR6S/APIKK1.jpg" alt="Асриева Каринэ Леонидовна" />
+            </div>
+            <div class="speaker-info">
+              <h3>Асриева Каринэ Леонидовна</h3>
+              <p>
+                Зам. начальника отдела по привлечению инвестиций, Агентство по привлечению
+                инвестиций Краснодарского края
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <section class="audience" id="audience">
+      <div class="container">
+        <div class="section-title">
+          <h2>ДЛЯ КОГО ЭТОТ ФОРУМ</h2>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-crown"></i></div>
+            <div class="audience-content">
+              <h3>Владельцы бизнеса</h3>
+              <p>Масштабирование и новые направления</p>
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="audience-content">
+              <h3>Топ-менеджеры</h3>
+              <p>Стратегическое управление</p>
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-rocket"></i></div>
+            <div class="audience-content">
+              <h3>Стартаперы</h3>
+              <p>Ранние стадии проектов</p>
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="audience-content">
+              <h3>Маркетологи</h3>
+              <p>Продвижение и клиенты</p>
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-coins"></i></div>
+            <div class="audience-content">
+              <h3>Финдиректора</h3>
+              <p>Финансовое планирование</p>
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-icon"><i class="fas fa-file-signature"></i></div>
+            <div class="audience-content">
+              <h3>Самозанятые</h3>
+              <p>Развитие личного бренда</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners" id="partners">
+      <div class="container">
+        <div class="section-title">
+          <h2>ПАРТНЕРЫ</h2>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-building"></i>
+              <span>Фонд развития бизнеса КК</span>
+            </a>
+          </div>
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-hand-holding-usd"></i>
+              <span>Фонд Микрофинансирования</span>
+            </a>
+          </div>
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-file-alt"></i>
+              <span>Экспертные решения</span>
+            </a>
+          </div>
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-handshake"></i>
+              <span>Южная ассоциация франчайзинга</span>
+            </a>
+          </div>
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-spa"></i>
+              <span>Парфюмерный Стиль</span>
+            </a>
+          </div>
+          <div class="partner-card">
+            <a href="#">
+              <i class="fas fa-university"></i>
+              <span>ФНС России</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <div class="location-wrapper">
+          <div class="location-grid">
+            <div class="location-map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=41.044879%2C45.103214&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxOTU5MjIzOTk0EnPQoNC-0YHRgdC40Y8sINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCDQndC-0LLQvtC60YPQsdCw0L3RgdC6LCDQn9C10YDQstC-0LzQsNC50YHQutCw0Y8g0YPQu9C40YbQsCwgMTMyIgoN9i0kQhWwaTRC&z=17.44"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="location-info">
+              <h3>МЕСТО ПРОВЕДЕНИЯ</h3>
+              <p><i class="fas fa-map-pin"></i> г. Новокубанск, ул. Первомайская, 132</p>
+              <p><i class="fas fa-calendar-alt"></i> 5 марта 2026</p>
+              <p><i class="fas fa-clock"></i> 09:30 - 13:00</p>
+              <p><i class="fas fa-phone-alt"></i> 8 800 300 57 61</p>
+              <p><i class="fas fa-envelope"></i> novcenter@ya.ru</p>
+              <a
+                href="https://forms.yandex.ru/u/698078c684227c6d0ca0b3c8"
+                target="_blank"
+                class="register-btn"
+                style="margin-top: 20px"
+                >РЕГИСТРАЦИЯ</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ТВОЯ ВЕСНА УСПЕХА</h3>
+            <p>Ежегодная конференция для предпринимателей и самозанятых</p>
+          </div>
+          <div class="footer-section">
+            <h3>КОНТАКТЫ</h3>
+            <p><i class="fas fa-envelope"></i> novcenter@ya.ru</p>
+            <p><i class="fas fa-phone"></i> 8 800 300 57 61</p>
+            <p><i class="fas fa-map-marker-alt"></i> Новокубанск, Первомайская, 132</p>
+          </div>
+          <div class="footer-section">
+            <h3>ССЫЛКИ</h3>
+            <a href="#about">Программа</a>
+            <a href="#speakers">Спикеры</a>
+            <a href="#partners">Партнеры</a>
+            <a href="#register">Регистрация</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2026 Твоя весна успеха. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
