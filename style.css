@@ -1015,3 +1015,56 @@ footer {
     padding: 16px 18px;
   }
 }
+
+/* ===== FLOWER DECOR ===== */
+/* ===== SOFT IRIS BACKGROUND ===== */
+
+.features,
+.audience,
+.schedule,
+.partners,
+.location {
+  position: relative;
+  overflow: hidden;
+}
+
+/* слой с цветами */
+.features::before,
+.audience::before,
+.partners::before,
+.schedule::before,
+.location::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background-image: url('./public/iris-decor.png');
+  background-repeat: repeat;
+  background-size: 520px; /* крупнее = меньше повторов */
+  background-position: center;
+
+  opacity: 0.3; /* ВОТ ГЛАВНОЕ — еле заметно */
+  filter: saturate(0.7) blur(0.3px); /* приглушить + чуть мягче */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* лёгкая белая вуаль, чтобы текст и карточки читались */
+.features::before,
+.audience::before,
+.schedule::before,
+.partners::before,
+.location::before {
+  transform: rotate(-6deg) scale(1.15);
+  transform-origin: center;
+}
+
+/* контент секций поверх */
+.features > .container,
+.audience > .container,
+.schedule > .container,
+.partners > .container,
+.location > .container {
+  position: relative;
+  z-index: 1;
+}
